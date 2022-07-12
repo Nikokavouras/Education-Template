@@ -383,16 +383,16 @@ footer {
 }
 
 footer .footer-container {
-  display: flex;
-  gap: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8em;
   align-items: center;
 }
 
 footer .footer-container .part {
-  width: 25%;
-  padding: 2em;
+  padding: 1em;
   align-items: flex-start;
-  height: 15em;
+  height: 12em;
 }
 
 footer .footer-container .part ul {
