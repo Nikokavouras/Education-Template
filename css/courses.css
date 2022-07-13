@@ -235,3 +235,132 @@ footer .footer-container .part .social {
     display: flex;
     align-items: center;
 }
+
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+    .container {
+        width: var(--containerWidth-md);
+    }
+
+    .categories {
+        height: 50em;
+        /* margin-bottom: 20em; */
+    }
+
+    .categories .categories-container {
+        grid-template-columns: 1fr;
+    }
+
+    .categories .categories-container .categories-left {
+        margin-right: 0em;
+    }
+
+    /* FOOTER */
+    footer .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+}
+
+
+
+@media (max-width: 760px) {
+
+    .container {
+        width: var(--containerWidth-sm);
+    }
+
+    /* HEADER */
+    nav {}
+
+    nav .nav-container {
+        padding: 2em;
+    }
+
+    nav .nav-container h4 {
+        font-size: 1.5em;
+    }
+
+    nav .nav-container .open-menu-btn {
+        display: block;
+        font-size: 3em;
+        font-weight: bold;
+        color: var(--whiteColor);
+        background-color: transparent;
+    }
+
+    nav .nav-container .nav-menu {
+        display: none;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 1em;
+        text-align: center;
+    }
+
+    .hero .hero-container {
+        padding: 2em;
+        grid-template-columns: 1fr;
+        margin-top: 5em;
+    }
+
+
+    /* CATEGORIES */
+    .categories {
+        height: 65em;
+    }
+
+    .categories .categories-container {
+        padding: 1em;
+    }
+
+    .categories .categories-container .categories-right {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* COURSES */
+    .courses .courses-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* FAQ */
+    .faqs {
+        padding: 1em;
+        margin-bottom: 10em;
+    }
+
+    .faqs .faqs-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials-container {
+        padding: 1em;
+    }
+
+    /* FOOTER */
+    footer .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+
+    /* CATEGORIES */
+    .categories {
+        height: 95em;
+    }
+
+    .categories .categories-container .categories-right {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* COURSES */
+    .courses .courses-container {
+        grid-template-columns: 1fr;
+    }
+}
